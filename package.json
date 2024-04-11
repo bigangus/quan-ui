@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm --filter quan-ui build",
+    "dev": "pnpm run --filter site dev",
+    "docs:build": "pnpm run --filter site build",
+    "pub": "pnpm build && pnpm publish --filter quan-ui"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@ant-design/icons-vue": "^7.0.1",
     "@vitejs/plugin-vue": "^5.0.4",
+    "ant-design-vue": "^4.1.2",
+    "less": "^4.2.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.0",
+    "vite": "^5.2.8",
     "vue": "^3.4.21",
     "vue-tsc": "^2.0.6"
   }

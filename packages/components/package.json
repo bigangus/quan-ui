@@ -1,21 +1,12 @@
 {
   "name": "quan-ui",
-  "private": true,
   "version": "1.0.0",
-  "type": "module",
-  "main": "./src/index.js",
+  "description": "",
+  "main": "./src/index.ts",
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "build": "vite build"
   },
-  "dependencies": {
-    "vue": "^3.4.21"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
