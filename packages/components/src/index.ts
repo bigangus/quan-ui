@@ -1,5 +1,5 @@
 import type { App } from 'vue';
-
+import './style/index.scss';
 import QButton from './QButton/QButton.vue';
 
 export default {
