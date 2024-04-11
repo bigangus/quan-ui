@@ -9,13 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "quan-ui": "workspace:*",
-    "vue": "^3.4.21"
+    "quan-ui": "workspace:*"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.4",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vue-tsc": "^2.0.6"
   }
 }
