@@ -33,11 +33,7 @@ importers:
         specifier: ^2.0.6
         version: 2.0.12(typescript@5.4.5)
 
-  packages/components:
-    dependencies:
-      vue:
-        specifier: ^3.2.36
-        version: 3.4.21(typescript@5.4.5)
+  packages/components: {}
 
   packages/site:
     dependencies:

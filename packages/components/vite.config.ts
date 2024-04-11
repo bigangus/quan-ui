@@ -1,38 +1,36 @@
-import {defineConfig} from "vite";
-import vue from "@vitejs/plugin-vue";
-import dts from "vite-plugin-dts";
-import {resolve} from "path";
+import {defineConfig} from 'vite';
+import vue from '@vitejs/plugin-vue';
+import dts from 'vite-plugin-dts';
+import {resolve} from 'path';
 
 export default defineConfig({
     build: {
         emptyOutDir: true,
         lib: {
             entry: {
-                index: resolve(__dirname, "./src/index.ts"),
+                index: resolve(__dirname, './src/index.ts'),
             },
-            formats: ["es"],
-            name: "test-ui",
+            formats: ['es'],
+            name: 'test-ui',
         },
         minify: false,
         rollupOptions: {
-            // 确保外部化处理那些你不想打包进库的依赖
-            external: ["vue", "ant-design-vue"],
+            external: ['vue', 'ant-design-vue'],
             output: {
-                chunkFileNames: "common/[name].js",
+                chunkFileNames: 'common/[name].js',
                 entryFileNames: (file) => {
-                    if (file.name == "index") {
-                        return "index.js";
+                    if (file.name == 'index') {
+                        return 'index.js';
                     } else {
-                        return "[name]/index.js";
+                        return '[name]/index.js';
                     }
                 },
-                // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
                 globals: {
-                    vue: "Vue",
+                    vue: 'Vue',
                 },
             },
         },
-        assetsDir: "",
+        assetsDir: '',
     },
     plugins: [vue(), dts()],
     css: {

@@ -1,4 +1,4 @@
-import type { App } from 'Vue';
+import type { App } from 'vue';
 
 import QButton from './QButton/QButton.vue';
 
