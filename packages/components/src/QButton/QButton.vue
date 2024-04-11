@@ -1,11 +1,10 @@
 <template>
-  <Button danger>
+  <button danger>
     <slot></slot>
-  </Button>
+  </button>
 </template>
 
 <script setup lang="ts">
-import { Button } from 'ant-design-vue';
 </script>
 
 <style lang="less">

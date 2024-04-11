@@ -15,10 +15,10 @@ export default defineConfig({
         },
         minify: false,
         rollupOptions: {
-            external: ['vue', 'ant-design-vue'],
+            external: ['vue', 'element-plus'],
             output: {
                 chunkFileNames: 'common/[name].js',
-                entryFileNames: (file) => {
+                entryFileNames: (file: any) => {
                     if (file.name == 'index') {
                         return 'index.js';
                     } else {
