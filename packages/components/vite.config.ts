@@ -11,7 +11,7 @@ export default defineConfig({
                 index: resolve(__dirname, './src/index.ts'),
             },
             formats: ['es'],
-            name: 'test-ui',
+            name: 'quan-ui',
         },
         minify: false,
         rollupOptions: {
