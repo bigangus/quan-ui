@@ -26,13 +26,16 @@ export default defineConfig({
                     }
                 },
                 globals: {
-                    vue: 'Vue',
+                    vue: 'Vue'
                 },
             },
         },
         assetsDir: '',
     },
-    plugins: [vue(), dts()],
+    plugins: [
+        vue(),
+        dts()
+    ],
     css: {
         preprocessorOptions: {
             less: {
