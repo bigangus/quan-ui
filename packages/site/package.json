@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "quan-ui": "workspace:*"
+    "qzfz-ui": "workspace:*"
   },
   "devDependencies": {
   }

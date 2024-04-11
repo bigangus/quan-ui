@@ -47,7 +47,7 @@ importers:
 
   packages/site:
     dependencies:
-      quan-ui:
+      qzfz-ui:
         specifier: workspace:*
         version: link:../components
       vue:

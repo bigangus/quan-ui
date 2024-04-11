@@ -1,13 +1,13 @@
 {
-  "name": "quan-ui",
+  "name": "qzfz-ui",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm --filter quan-ui build",
+    "build": "pnpm --filter qzfz-ui build",
     "dev": "pnpm run --filter site dev",
     "docs:build": "pnpm run --filter site build",
-    "pub": "pnpm build && pnpm publish --filter quan-ui"
+    "pub": "pnpm build && pnpm publish --filter qzfz-ui"
   },
   "keywords": [],
   "author": "",
